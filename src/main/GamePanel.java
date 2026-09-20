@@ -135,10 +135,7 @@ public class GamePanel extends JPanel implements Runnable {
             long passed = drawEnd - drawStart;
             g2.setColor(Color.white);
             g2.drawString("Draw Time: " +passed, 10, 400);
-            System.out.println("Draw Time:" + passed);
         }
-        
-        g2.dispose();
     }
     
     public void playMusic(int i) {
