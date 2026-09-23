@@ -1,12 +1,8 @@
 # My First Game
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/TheKIAR/My-First-Game/main/assets/runtime-screenshot.png" alt="My First Game runtime screenshot" width="900">
-</p>
+![My First Game runtime screenshot](assets/runtime-screenshot.png)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/TheKIAR/My-First-Game/main/assets/demo.gif" alt="My First Game runtime demo" width="900">
-</p>
+![My First Game runtime demo](assets/demo.gif)
 
 
 ![Runtime Screenshot](assets/runtime-screenshot.png)
