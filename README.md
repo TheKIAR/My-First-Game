@@ -1,13 +1,8 @@
 # My First Game
 
-![My First Game runtime screenshot](assets/runtime-screenshot.png)
+![My First Game runtime screenshot](./assets/runtime-screenshot.png)
 
-![My First Game runtime demo](assets/demo.gif)
-
-
-![Runtime Screenshot](assets/runtime-screenshot.png)
-
-![Runtime Demo](assets/demo.gif)
+![My First Game runtime demo](./assets/demo.gif)
 ![Java CI](https://github.com/TheKIAR/My-First-Game/actions/workflows/ci.yml/badge.svg)
 
 
