@@ -1,6 +1,8 @@
 # My First Game
 
-![Project Preview](assets/project-preview.svg)
+![Runtime Screenshot](assets/runtime-screenshot.png)
+
+![Runtime Demo](assets/demo.gif)
 ![Java CI](https://github.com/TheKIAR/My-First-Game/actions/workflows/ci.yml/badge.svg)
 
 
