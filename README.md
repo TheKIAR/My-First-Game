@@ -1,5 +1,8 @@
 # My First Game
 
+![Java CI](https://github.com/TheKIAR/My-First-Game/actions/workflows/ci.yml/badge.svg)
+
+
 A 2D Java adventure game built with Java Swing. The project focuses on core game-programming concepts such as a real-time game loop, tile-based worlds, collision detection, player movement, interactive objects, animation, sound and HUD rendering.
 
 ## Features
@@ -45,13 +48,22 @@ Generated build output is intentionally excluded from the repository.
 
 ## Run
 
-The main class is:
+Requirements: **Java 17+**.
 
-~~~text
-main.Main
+Compile from the repository root:
+
+~~~bash
+mkdir -p out
+javac -d out $(find src -name "*.java")
 ~~~
 
-Open the project in a Java IDE, make sure the res directory remains on the classpath/runtime working directory, and run main.Main.
+Then run:
+
+~~~bash
+java -cp out main.Main
+~~~
+
+The `res/` directory must remain available from the repository root at runtime. In an IDE, run `main.Main` with the project root as the working directory.
 
 ## Controls
 
