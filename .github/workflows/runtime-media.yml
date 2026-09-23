@@ -58,7 +58,7 @@ jobs:
           sed -i 's/import java.awt.image.BufferedImage;/import java.awt.image.BufferedImage;\n          import java.awt.event.KeyEvent;/' Capture.java
           javac -cp out:res -d out Capture.java
           xvfb-run -a -s "-screen 0 1200x800x24" java -cp out:res Capture
-          magick -delay 9 -loop 0 assets/capture-frames/frame-*.png assets/demo.gif
+          convert -delay 9 -loop 0 assets/capture-frames/frame-*.png assets/demo.gif
           rm -rf assets/capture-frames Capture.java
       - name: Commit runtime media
         run: |
