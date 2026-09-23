@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#1f2937"/></linearGradient></defs>
+<rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+<rect x="48" y="44" width="1184" height="632" rx="20" fill="#0b1220" stroke="#374151" stroke-width="3"/>
+<text x="82" y="100" fill="#f9fafb" font-family="Arial" font-size="36" font-weight="700">MY FIRST GAME</text>
+<text x="82" y="132" fill="#9ca3af" font-family="Arial" font-size="18">Java Swing • 2D Adventure • Tile Map • Collision • HUD</text>
+<rect x="82" y="166" width="1116" height="430" rx="12" fill="#172554"/>
+<path d="M82 510h1116v86H82z" fill="#365314"/><path d="M82 450h1116v60H82z" fill="#713f12"/>
+<g fill="#1e40af" opacity=".9"><rect x="140" y="220" width="90" height="70"/><rect x="230" y="290" width="90" height="70"/><rect x="1010" y="210" width="90" height="70"/><rect x="920" y="360" width="90" height="70"/></g>
+<g fill="#78350f"><rect x="360" y="410" width="95" height="95"/><rect x="820" y="430" width="95" height="75"/></g>
+<circle cx="610" cy="390" r="30" fill="#f59e0b"/><rect x="594" y="420" width="32" height="65" rx="10" fill="#2563eb"/>
+<rect x="112" y="186" width="250" height="46" rx="8" fill="#111827" opacity=".9"/><text x="132" y="217" fill="#fff" font-family="Arial" font-size="18">HP  ████████░░  80%</text>
+<text x="82" y="642" fill="#d1d5db" font-family="Arial" font-size="18">Project preview • real-time game loop • keyboard input • interactive objects</text>
+</svg>
