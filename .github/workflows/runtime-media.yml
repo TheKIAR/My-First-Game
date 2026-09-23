@@ -20,7 +20,7 @@ jobs:
           distribution: temurin
           java-version: "17"
       - name: Install capture tools
-        run: sudo apt-get update && sudo apt-get install -y xvfb imagemagick
+        run: sudo apt-get update && sudo apt-get install -y xvfb imagemagick xdotool
       - name: Compile
         run: |
           mkdir -p out
@@ -57,7 +57,25 @@ jobs:
           JAVA
           sed -i 's/import java.awt.image.BufferedImage;/import java.awt.image.BufferedImage;\n          import java.awt.event.KeyEvent;/' Capture.java
           javac -cp out:res -d out Capture.java
-          xvfb-run -a -s "-screen 0 1200x800x24" java -cp out:res Capture
+          xvfb-run -a -s "-screen 0 1200x800x24" bash -lc '
+            java -cp out:res Capture &
+            CAPTURE_PID=$!
+            for i in $(seq 1 30); do
+              WID=$(xdotool search --name "Treasure Hunting" 2>/dev/null | head -n 1 || true)
+              if [ -n "$WID" ]; then break; fi
+              sleep 0.5
+            done
+            if [ -z "$WID" ]; then echo "Game window not found"; exit 1; fi
+            xdotool windowactivate --sync "$WID"
+            xdotool windowmap "$WID" || true
+            sleep 1
+            import -window "$WID" assets/runtime-screenshot.png
+            for i in $(seq -w 0 17); do
+              import -window "$WID" "assets/capture-frames/frame-$i.png"
+              sleep 0.18
+            done
+            wait "$CAPTURE_PID" || true
+          '
           convert -delay 9 -loop 0 assets/capture-frames/frame-*.png assets/demo.gif
           rm -rf assets/capture-frames Capture.java
       - name: Commit runtime media
