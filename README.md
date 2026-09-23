@@ -86,3 +86,14 @@ Some artwork and audio in the original project may come from tutorial or third-p
 - Add a settings menu
 - Package a runnable JAR
 - Add screenshots or a gameplay GIF
+
+
+## 🌐 Links
+
+**Portfolio:** https://ragibashhab.netlify.app/
+
+**GitHub:** https://github.com/TheKIAR
+
+**LinkedIn:** https://www.linkedin.com/in/md-ragib-ashhab-768a19240/
+
+**Linktree:** https://linktr.ee/RagibAshhab
