@@ -5,6 +5,12 @@
 <p align="center"><a href="https://github.com/TheKIAR/My-First-Game"><img src="https://github.com/TheKIAR/My-First-Game/blob/main/assets/runtime-screenshot.png?raw=true" alt="My First Game runtime" width="820"></a></p>
 <p align="center"><img src="https://github.com/TheKIAR/My-First-Game/actions/workflows/ci.yml/badge.svg" alt="Java CI"></p>
 
+## 🎬 Gameplay preview
+
+<p align="center"><img src="./assets/demo.gif" alt="My First Game gameplay" width="820"></p>
+
+A short look at the game loop, player movement, world rendering and interactive objects.
+
 ## 🕹️ Meet the project
 This is a first complete game project focused on the systems that make a 2D game work: a real-time loop, player input, tile worlds, collisions, animation, sound, objects and HUD rendering.
 
