@@ -17,3 +17,31 @@ out/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+!.env.*.example
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.provisionprofile
+credentials.json
+credentials.yaml
+credentials.yml
+credentials.ini
+secrets.json
+secrets.yaml
+secrets.yml
+secrets.ini
+service-account*.json
+firebase-adminsdk*.json
+.npmrc
+.pypirc
+.netrc
